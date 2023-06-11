@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="flex main-nav container ">
+            <a href="#" class="company-logo">
+                <img src="assets/news-app-logo-v3.png" alt="news-logo" id="news-logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance </li>
+                    <li class=" hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class=" hover-link nav-item" id="international" onclick="onNavItemClick('international')">
+                        International</li>
+                </ul>
+            </div>
+            <div class=" search-bar flex">
+                <input type="text" class="news-input" placeholder="e.g. Science" id="search-input">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+
+    </nav>
+
+    <main>
+        <div class="cards-container flex container" id="cards-container">
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 id="news-source" class="news-source">asndlnkfla</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae,
+                    consectetur
+                    enim impedit quae nisi velit nulla atque adipisci minima repellendus accusantium vitae
+                    labore
+                    animi quisquam error qui. Repudiandae, officia reiciendis?
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
